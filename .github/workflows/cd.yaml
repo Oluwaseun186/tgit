@@ -2,11 +2,12 @@ name: simple-project
 on:
   push:
     branches:
-      - main
+      - origin
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v4
       
