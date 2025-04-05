@@ -12,11 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Docker
+      - name: "Set up Docker"
         uses: docker/setup-buildx-action@v2
 
-      - name: Pull Docker image and run container
+      - name: "Pull Docker image and run container"
         run: |
           docker pull theoafactor/bitblog:123
           docker run -d -p 74:80 theoafactor/bitblog:123
-          
+
